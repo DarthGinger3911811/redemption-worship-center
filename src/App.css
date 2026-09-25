@@ -1,0 +1,300 @@
+.site {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f6f1;
+  color: #24231f;
+}
+
+.navbar {
+  width: 100%;
+  padding: 24px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: rgba(248, 246, 241, 0.96);
+  border-bottom: 1px solid #dedbd2;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.brand-subtitle {
+  margin-top: 5px;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: #756f64;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a,
+.text-link {
+  color: #3d3a34;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover,
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.nav-button,
+.primary-button {
+  display: inline-block;
+  padding: 13px 20px;
+  background: #282720;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.secondary-button {
+  display: inline-block;
+  padding: 12px 20px;
+  color: #282720;
+  border: 1px solid #aaa59a;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px;
+  box-sizing: border-box;
+  background:
+    linear-gradient(
+      rgba(32, 30, 25, 0.55),
+      rgba(32, 30, 25, 0.55)
+    ),
+    url('/church-hero.jpg') center / cover;
+}
+
+.hero-content {
+  max-width: 850px;
+  color: white;
+}
+
+.eyebrow {
+  margin-bottom: 18px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  color: white;
+  font-size: clamp(44px, 7vw, 82px);
+  line-height: 1.02;
+  letter-spacing: -3px;
+  font-weight: 500;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 28px auto;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.hero .primary-button {
+  background: white;
+  color: #282720;
+}
+
+.hero .secondary-button {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.service-section,
+.about-section,
+.placeholder-section,
+.give-section {
+  padding: 100px 8%;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.section-heading h2,
+.about-content h2,
+.placeholder-section h2,
+.give-section h2 {
+  margin: 0 0 20px;
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 38px;
+  background: #ffffff;
+  border: 1px solid #dedbd2;
+}
+
+.service-card h3 {
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.service-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #756f64;
+}
+
+.about-section {
+  background: #e9e4d9;
+}
+
+.about-content {
+  max-width: 760px;
+}
+
+.about-content p:not(.eyebrow) {
+  margin-bottom: 28px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #57534a;
+}
+
+.placeholder-section {
+  border-bottom: 1px solid #dedbd2;
+}
+
+.placeholder-section > p:not(.eyebrow),
+.give-section > p:not(.eyebrow) {
+  max-width: 600px;
+  line-height: 1.7;
+  color: #625e55;
+}
+
+.give-section {
+  text-align: center;
+  background: #282720;
+  color: white;
+}
+
+.give-section h2 {
+  color: white;
+}
+
+.give-section .primary-button {
+  margin-top: 28px;
+  background: white;
+  color: #282720;
+}
+
+.footer {
+  padding: 50px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: #1d1c18;
+  color: #d5d0c5;
+}
+
+.footer .brand-name {
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-section,
+  .about-section,
+  .placeholder-section,
+  .give-section {
+    padding: 70px 6%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
